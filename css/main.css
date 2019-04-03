@@ -1,0 +1,121 @@
+body {
+    margin: 0 20px;
+    /* -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none; */
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+h1, h2, h3 {
+    padding: 0;
+    margin: 0;
+    line-height: initial;
+}
+h1 {
+    font-size: 15em;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: .5em;
+    line-height: 1;
+}
+#title {
+    text-transform: lowercase;
+}
+body {
+    font-size: 21px;
+    font-family: "Times New Roman", "Times", serif;
+    line-height: 2.2;
+}
+.highlight {
+    background: #BBD4FB;
+}
+select, input, select {
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    margin-top: .6em;
+}
+
+nav select {
+    padding: 7px;
+}
+
+.name-form {
+    position: absolute;
+    right: 1em;
+    top: .7em;
+}
+
+.field, .submit {
+    border: none;
+    border: 1px solid rgb(156, 156, 156);
+    border-radius: 10px;
+    padding: 3px 10px 3px;;
+}
+
+.submit {
+    cursor: pointer;
+}
+
+.submit:hover {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  background: #f0f0f0;
+}
+
+.one { background: yellow; }
+.two { background: #c4ffcd; }
+.three { background: #D3BEAC; }
+.four { background: #e5e5e5; }
+
+section {
+    margin-bottom: 2em;
+}
+
+section a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    background: transparent;
+    min-height: 140px;
+    /* padding: 20px; */
+    width: 290px;
+    float: left;
+    margin: 0 10px 10px 0;
+    cursor: pointer;
+    margin-bottom: 2em;
+}
+
+section a h2 {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+section .date {
+    background: #f0f0f0;
+}
+
+.section-header {
+    text-decoration: underline;
+    font-size: 50px;
+    margin-bottom: 1em;
+    font-weight: normal;
+}
+
+.clear {
+    clear: both;
+}
+
+.calendar {
+    margin-top: 5em;
+    border-top: 1px solid #ececec;
+    padding-top: 5em;
+}
