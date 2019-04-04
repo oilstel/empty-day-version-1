@@ -135,3 +135,12 @@ section .date {
     border-top: 1px solid #ececec;
     padding-top: 5em;
 }
+
+.footer {
+    border-top: 1px solid #000;
+    margin-bottom: 2em;
+}
+
+.right {
+    float: right;
+}
