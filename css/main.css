@@ -3,14 +3,18 @@ body {
     /* -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: none; */
 }
+
 *, *:before, *:after {
     box-sizing: border-box;
 }
+
 h1, h2, h3 {
     padding: 0;
     margin: 0;
     line-height: initial;
+    font-weight: normal;
 }
+
 h1 {
     font-size: 15em;
     font-weight: normal;
@@ -18,17 +22,25 @@ h1 {
     margin-bottom: .5em;
     line-height: 1;
 }
+
+p:last-child {
+    margin-bottom: 0;
+}
+
 #title {
     text-transform: lowercase;
 }
+
 body {
     font-size: 21px;
     font-family: "Times New Roman", "Times", serif;
     line-height: 2.2;
 }
+
 .highlight {
     background: #BBD4FB;
 }
+
 select, input, select {
     font-size: 1em;
     margin: 0;
@@ -94,6 +106,10 @@ section a {
     margin-bottom: 2em;
 }
 
+section a:hover {
+    text-decoration: underline;
+}
+
 section a h2 {
     font-size: 30px;
     font-weight: normal;
@@ -118,4 +134,38 @@ section .date {
     margin-top: 5em;
     border-top: 1px solid #ececec;
     padding-top: 5em;
+}
+
+.footer {
+    border-top: 1px solid #000;
+    margin-bottom: 2em;
+}
+
+.right {
+    float: right;
+}
+
+.symbol {
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 9px solid #000;
+    display: inline-block;
+    float: right;
+    margin: 6px;
+    margin-right: 0;
+    /* transition: all 0.5s ease; */
+}
+
+.symbol.closed {
+    transform: rotate(90deg);
+}
+
+#faqs h3 {
+    cursor: pointer;
+}
+
+#faqs p {
+    display: none;
 }
