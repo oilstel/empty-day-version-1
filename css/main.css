@@ -144,3 +144,28 @@ section .date {
 .right {
     float: right;
 }
+
+.symbol {
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 9px solid #000;
+    display: inline-block;
+    float: right;
+    margin: 6px;
+    margin-right: 0;
+    /* transition: all 0.5s ease; */
+}
+
+.symbol.closed {
+    transform: rotate(90deg);
+}
+
+#faqs h3 {
+    cursor: pointer;
+}
+
+#faqs p {
+    display: none;
+}
