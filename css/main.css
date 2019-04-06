@@ -143,6 +143,7 @@ section .date {
 
 .right {
     float: right;
+    font-style: italic;
 }
 
 .symbol {
