@@ -9,21 +9,6 @@
   <link href="css/main.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="js/home.js"></script>
-
-  <script>
-    $(document).ready(function(){
-      $('input[name=first_name]').keyup(function(){
-        $('#initname').text( this.value + ' ' );
-
-        var field = $('input[name=first_name]').val();
-
-        if (field == '') {
-          console.log('empty');
-          $('#initname').text( '_' );
-        }
-      });
-    });
-  </script> 
 </head>
 
 <body>
@@ -457,7 +442,7 @@
     <input type="text" name="first_name" placeholder="First Name" required="required" class="field" />
   </div>
 
-  <h1 id="title"><span id="initname">_</span>day</h1>
+  <h1 id="title"><span class="initname">_</span>day</h1>
 
   <p>
     Empty Day is a day of social media silence taking place each year on <span class="highlight">October 11, 2019</span>. There are 191 days until the next Empty Day.
@@ -474,7 +459,7 @@
   </p>
   <p>
     Wind over water,<br />
-    _day
+    <span class="initname">_</span>day
   </p>
 
   <div class="calendar">
@@ -576,7 +561,7 @@
   </div>
 
   <div class="footer">
-    _day <span class="right">“Social media is like the weather. It's always changing.”</span>
+    <span class="initname">_</span>day <span class="right">“Social media is like the weather. It's always changing.”</span>
   </div>
 </body>
 

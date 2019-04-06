@@ -9,21 +9,6 @@
   <link href="css/main.css" rel="stylesheet">
   <link href="css/post.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-  <script>
-    $(document).ready(function(){
-      $('input[name=first_name]').keyup(function(){
-        $('#initname').text( this.value + ' ' );
-
-        var field = $('input[name=first_name]').val();
-
-        if (field == '') {
-          console.log('empty');
-          $('#initname').text( '_' );
-        }
-      });
-    });
-  </script> 
 </head>
 
 <body class="two">
