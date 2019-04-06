@@ -153,7 +153,7 @@ section .date {
     border-top: 9px solid #000;
     display: inline-block;
     float: right;
-    margin: 6px;
+    margin: 10px;
     margin-right: 0;
     /* transition: all 0.5s ease; */
 }
@@ -164,6 +164,9 @@ section .date {
 
 #faqs h3 {
     cursor: pointer;
+    border-top: 1px solid #ececec;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 #faqs p {
