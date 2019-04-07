@@ -16,17 +16,31 @@ h3 {
     font-size: 30px;
 }
 
-.content {
-    /* background: #fff; */
-    padding: 20px;
-    max-width: 750px;
-    margin: 0 auto 0;
-    margin-top: 3em;
-}
-
 .container {
     margin-bottom: 3em;
     margin-top: 1.5em;
+}
+
+p.return {
+  margin-top: 2em;
+}
+
+p.return a {
+  /* background: transparent; */
+  text-decoration: underline;
+}
+
+.prompt {
+  background: white;
+  /* opacity: 0.8; */
+  padding: 1.75em;
+  padding-top: 0.5em;
+  padding-bottom: 1.25em;
+  margin: 2em 0;
+}
+
+h2 {
+  text-decoration: underline;
 }
 
 @media (max-width: 535px) {
