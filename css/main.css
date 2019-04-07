@@ -47,27 +47,31 @@ select, input, select {
     padding: 0;
 }
 
+.name-form input {
+  width: 14em;
+}
+
 nav {
     margin-top: .6em;
 }
 
 nav select {
     padding: 7px;
-    width: 11em;
+    width: 12em;
     margin-right: 0.15em;
 }
 
 .name-form {
     position: absolute;
     right: 1em;
-    top: .7em;
+    top: 14px;
 }
 
 .field, .submit {
     border: none;
     border: 1px solid rgb(156, 156, 156);
     border-radius: 10px;
-    padding: 3px 10px 3px;;
+    padding: 2px 10px 2px;;
 }
 
 .submit {
@@ -113,7 +117,7 @@ section a:hover {
 }
 
 section a h2 {
-    font-size: 30px;
+    font-size: 32px;
     font-weight: normal;
 }
 
@@ -133,9 +137,8 @@ section .date {
 }
 
 .calendar {
-    margin-top: 5em;
-    border-top: 1px solid #ececec;
-    padding-top: 5em;
+    margin-top: 6em;
+    /* border-top: 1px solid #ececec; */
 }
 
 .footer {
@@ -187,19 +190,60 @@ a.home {
 
 .content {
     /* background: #fff; */
-    padding: 20px;
-    max-width: 750px;
+    padding: 20px 0;
+    max-width: 710px;
     margin: 0 auto 0;
     margin-top: 3em;
 }
 
-@media (max-width: 535px) {
+.letter {
+  font-size: 25px;
+}
+
+@media (max-width: 850px) {
+
+  .name-form input {
+    width: 8em;
+  }
+
+}
+
+@media (max-width: 730px) {
+
+  .name-form  {
+      position: relative;
+      margin-left: 20px;
+      margin-right: -20px;
+      margin-top: -12px;
+  }
+
+  nav select,
+  .name-form input {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 640px) {
+
+    .letter {
+      font-size: 21px;
+    }
+
     h1 {
         margin-top: 30px;
-        font-size: 5em;
+        font-size: 6em;
     }
-    .name-form  {
-        position: relative;
-        margin-left: 20px;
+
+    section a {
+      min-height: auto;
+    }
+
+    .section-header {
+      margin-bottom: 0.5em;
+    }
+
+    .footer {
+      font-size: 0.75em;
     }
 }
