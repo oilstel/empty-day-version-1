@@ -16,7 +16,7 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 15em;
+    font-size: 10em;
     font-weight: normal;
     margin-top: 0;
     margin-bottom: .5em;
@@ -49,6 +49,7 @@ select, input, select {
 
 .name-form input {
   width: 14em;
+  outline: none;
 }
 
 nav {
