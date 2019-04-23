@@ -62,9 +62,10 @@ nav select {
 }
 
 .name-form {
-    position: absolute;
-    right: 1em;
-    top: 14px;
+    position: relative;
+    display: inline;
+    /* right: 1em;
+    top: 14px; */
 }
 
 .field, .submit {
