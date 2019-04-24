@@ -3,6 +3,7 @@ $(document).ready(function(){
     // Changes _day to field name
     $('input[name=first_name]').keyup(function(){
       $('.initname').text( this.value + ' ' );
+      $('#mirrored-name-field').val($(this).val());
 
       var field = $('input[name=first_name]').val();
 
