@@ -1,5 +1,5 @@
 body {
-    margin: 0 20px;
+    margin: 0;
     /* -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: none; */
 }
@@ -12,7 +12,8 @@ h1, h2, h3 {
     padding: 0;
     margin: 0;
     line-height: initial;
-    font-weight: normal;
+    font-weight: initial;
+    font-size: initial;
 }
 
 h1 {
@@ -23,11 +24,24 @@ h1 {
     line-height: 1;
 }
 
+h3#weather {
+    font-size: 2.5em;
+    margin: 2em 0 2em;
+}
+
 p:last-child {
     margin-bottom: 0;
 }
 
 #title {
+    text-transform: lowercase;
+}
+
+.wrapper, .footer {
+    margin: 0 20px;
+}
+
+.footer .initname {
     text-transform: lowercase;
 }
 
@@ -41,10 +55,30 @@ body {
     background: #BBD4FB;
 }
 
-select, input, select {
+select, input, button {
     font-size: 1em;
     margin: 0;
     padding: 0;
+}
+
+#consent {
+    line-height: 22px;
+    margin: .5em 0 .5em;
+}
+
+#consent label {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#centered-section {
+    text-align: center;
+    margin-top: 100px;
+}
+
+hr {
+    border: 4.5px solid rgb(211, 211, 211);
+    margin: 3em 0 3em;
 }
 
 nav {
@@ -68,7 +102,7 @@ nav select {
     border: none;
     border: 1px solid rgb(156, 156, 156);
     border-radius: 10px;
-    padding: 2px 10px 2px;
+    padding: 4px 8px 4px;
     outline: none;
 }
 
@@ -76,7 +110,7 @@ nav select {
     border: none;
     border: 1px solid rgb(156, 156, 156);
     border-radius: 10px;
-    padding: 2px 10px 2px;
+    padding: 4px 8px 4px;
     outline: none;
 }
 
@@ -153,7 +187,7 @@ section .date {
 
 .footer {
     border-top: 1px solid #000;
-    margin-bottom: 3em;
+    padding-bottom: 3em;
     margin-top: 6em;
 }
 
@@ -215,13 +249,51 @@ a.home {
     display: inline-block;
 }
 
-.field-item label {
-    content: "First name:";
+label {
     display: block;
     /* position: absolute; */
     /* margin-top: -29px; */
     font-size: 16px;
-    margin-bottom: -5px;
+    margin-bottom: -7px;
+}
+
+.leaf label {
+    margin-bottom: -15px;
+}
+
+.ocean:before {
+    background-color: black;
+    height: 120px;
+    display: block;    
+    content: "";
+    background: linear-gradient(to bottom, #ffffff, #BBD4FB);
+}
+
+.ocean {
+    background: #BBD4FB;
+    
+}
+
+.ocean-content {
+    padding: 0 20px;
+}
+
+#consent-label { display:inline; margin-left:5px; }
+
+.leaf {
+    width: 210px;
+    height: 120px;
+    padding-left: 30px;
+    padding-top: 20px;
+    background: url(../images/leaf.svg) no-repeat;
+    background-size: 100% 100%;
+    background-repeat: no-repeat !important;
+    float: left;
+    display: block;
+}
+
+.clear {
+    clear: both;
 }
 
 @media (max-width: 850px) {

@@ -16,58 +16,102 @@
 
 <body>
 
-  <h1 id="title"><span class="initname">_</span>day</h1>
+  <div class="wrapper">
+      <h1 id="title"><span class="initname">_</span>day</h1>
+    
+      <div class="container">
+        <div class="content">
+          <p>
+            Dear <span class="name-form"><input type="text" name="firstname" placeholder="your name here" required="required" class="name-field" /></span>,
+          </p>
+    
+            <p>Empty Day is a day of social media silence taking place on October 11, 2019. It’s a day we all agree to leave social media alone. Instead we agree to connect, reconnect, and maybe even go outside ... we “go quietly” for a day. There are 171 days until Empty Day.</p>
+    
+            <p>But Empty Day doesn’t disregard social media altogether. Empty Day is also this website, where in not too long, you’ll find ideas, assignments, and suggestions on how to use these social networks in more relaxing and imaginative ways. We aim to focus attention on how and when we post in order to promote better well-being and mental health for all.</p>
+            
+            <p>To get involved, you can:</p>
+            
+            <ul>
+              <li><span class="one">Take a photo of this website.</span> Post it to social media with the hashtag #_day.</li>
+              <li><span class="two">Print this website.</span> Put the flier up in your local town hall, school, or other public place.</li>
+              <li><span class="three">Tell your friends about this website.</span> Feel free to write to them or call them.</li>
+            </ul>
+            
+            <p>Empty Day is nothing without you. Feel free to sign up to our mailing list so we can notify you once a month about what’s going on. Once you do, we will list your first name below on a leaf blowing in the wind. There are 9,102 leaves right now.</p>
 
-  <div class="container">
-    <div class="content">
-      <p>
-        Dear <span class="name-form"><input type="text" name="first_name" placeholder="your name here" required="required" class="name-field" /></span>,
-      </p>
+            <p>
+              Wind over water,<br />
+              _day
+            </p>
 
-        <p>Empty Day is a day of social media silence taking place on October 11, 2019. It’s a day we all agree to leave social media alone. Instead we agree to connect, reconnect, and maybe even go outside ... we “go quietly” for a day. There are 171 days until Empty Day.</p>
+            <hr />
+    
+            <p>
 
-        <p>But Empty Day doesn’t disregard social media altogether. Empty Day is also this website, where in not too long, you’ll find ideas, assignments, and suggestions on how to use these social networks in more relaxing and imaginative ways. We aim to focus attention on how and when we post in order to promote better well-being and mental health for all.</p>
-        
-        <p>To get involved, you can:</p>
-        
-        <ul>
-          <li><span class="one">Take a photo of this website.</span> Post it to social media with the hashtag #_day.</li>
-          <li><span class="two">Print this website.</span> Put the flier up in your local town hall, school, or other public place.</li>
-          <li><span class="three">Tell your friends about this website.</span> Feel free to write to them or call them.</li>
-        </ul>
-        
-        <p>Empty Day is nothing without you. Feel free to sign up to our mailing list so we can notify you once a month about what’s going on. Once you do, we will list your first name below on a leaf blowing in the wind. There are 9,102 leaves right now.</p>
+              Sign up for monthly annoucements:
 
-        <p>
-          <div id="mail-form">
-              <div class="field-item">
-                <label>First name:</label>
-                <input type="text" name="first_name" placeholder="" required="required" class="field" />
+              <div id="mail-form">
+                  <div class="field-item">
+                    <label>First name:</label>
+                    <input type="text" name="mail_firstname" required="required" class="field firstname" />
+                  </div>
+                  <div class="field-item">
+                    <label>Email:</label>
+                    <input type="text" name="mail_email" placeholder="" required="required" class="field" />
+                  </div>
+                  <div class="field-item">
+                    <label>City:</label>
+                    <input type="text" name="mail_location" placeholder="" required="required" class="field" />
+                    <!-- <select onchange="location = this.value;">
+                      <option selected value="index.html">
+                        United States
+                      </option>
+                      <option value="index.html#tools">
+                        Europe
+                      </option>
+                      <option value="index.html#assignments">
+                        Canada
+                      </option>
+                      <option value="index.html#notes">
+                        Japan
+                      </option>
+                    </select> -->
+                  </div>
+                  <div id="consent">
+                    <input type="checkbox" name="consent" />
+                    <label id="consent-label">I understand that by clicking "Submit" I am subscribing to the Empty Day monthy newsletter and my name and city will be posted publicly on this website. Your email will be kept private.</label>
+                  </div>
+                  <div class="field-item">
+                    <input type="submit" value="Submit"  class="submit" />
+                  </div>
               </div>
-              <div class="field-item">
-                <label>Email:</label>
-                <input type="text" name="email" placeholder="" required="required" class="field" />
-              </div>
-              <div class="field-item">
-                <label>Country:</label>
-                <input type="text" name="country" placeholder="" required="required" class="field" />
-              </div>
-              <div class="field-item">
-                <input type="submit" value="Submit"  class="field" />
-              </div>
-          </div>
-        </p>
-        
-        <p>
-          Wind over water,<br />
-          _day
-        </p>
+            </p>
+            
+        </div>
+      </div>
+
   </div>
+
+  <div class="ocean">
+    <div class="ocean-content">
+      <div class="names">
+      </div>
+
+      <div class="clear"></div>
+
+      <div id="centered-section">
+
+        <h3 id="weather">It is currently sunny in New York City.</h3>
+
+        <button type="submit" value="Submit"  class="submit fadeout">Fade out</button>
+      </div>
+    </div>
+
+    <div class="footer">
+        <span class="initname">_</span>day <span class="right">“Social media is like the weather. It's always changing.”</span>
+      </div>
   </div>
 
-  <div class="footer">
-    <span class="initname">_</span>day <span class="right">“Social media is like the weather. It's always changing.”</span>
-  </div>
 </body>
 
 </html>
