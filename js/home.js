@@ -3,6 +3,7 @@ $(document).ready(function(){
     // Changes _day to field name
     $('input[name=first_name]').keyup(function(){
       $('.initname').text( this.value + ' ' );
+      $('.first-name').text( this.value + ' ' );
 
       var field = $('input[name=first_name]').val();
 

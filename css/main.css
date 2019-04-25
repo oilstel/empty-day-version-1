@@ -47,11 +47,6 @@ select, input, select {
     padding: 0;
 }
 
-.name-form input {
-  width: 14em;
-  outline: none;
-}
-
 nav {
     margin-top: .6em;
 }
@@ -73,7 +68,16 @@ nav select {
     border: none;
     border: 1px solid rgb(156, 156, 156);
     border-radius: 10px;
-    padding: 2px 10px 2px;;
+    padding: 2px 10px 2px;
+    outline: none;
+}
+
+.name-field {
+    border: none;
+    border: 1px solid rgb(156, 156, 156);
+    border-radius: 10px;
+    padding: 2px 10px 2px;
+    outline: none;
 }
 
 .name-form input {
@@ -206,26 +210,31 @@ a.home {
   font-size: 25px;
 }
 
+.field-item {
+    position: relative;
+    display: inline-block;
+}
+
+.field-item label {
+    content: "First name:";
+    display: block;
+    /* position: absolute; */
+    /* margin-top: -29px; */
+    font-size: 16px;
+    margin-bottom: -5px;
+}
+
 @media (max-width: 850px) {
 
   .name-form input {
     width: 8em;
   }
-
-}
-
-@media (max-width: 730px) {
-
-  .name-form  {
-      position: relative;
-      margin-left: 20px;
-      margin-right: -20px;
-      margin-top: -12px;
+  .field-item {
+      display: block;
   }
 
-  nav select,
-  .name-form input {
-    width: 100%;
+  .field {
+      width: 100%;
   }
 
 }

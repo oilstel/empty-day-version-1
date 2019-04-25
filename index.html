@@ -10,7 +10,7 @@
   <link href="images/icon-72.png" rel="apple-touch-icon-precomposed" sizes="72x72" type="image/png">
   <link href="images/icon-114.png" rel="apple-touch-icon-precomposed" sizes="114x114" type="image/png">
   <link href="css/main.css" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/jquery-3.1.0.min.js"></script>
   <script src="js/home.js"></script>
 </head>
 
@@ -21,7 +21,7 @@
   <div class="container">
     <div class="content">
       <p>
-        Dear <span class="name-form"><input type="text" name="first_name" placeholder="your name here" required="required" class="field" /></span>,
+        Dear <span class="name-form"><input type="text" name="first_name" placeholder="your name here" required="required" class="name-field" /></span>,
       </p>
 
         <p>Empty Day is a day of social media silence taking place on October 11, 2019. It’s a day we all agree to leave social media alone. Instead we agree to connect, reconnect, and maybe even go outside ... we “go quietly” for a day. There are 171 days until Empty Day.</p>
@@ -39,7 +39,23 @@
         <p>Empty Day is nothing without you. Feel free to sign up to our mailing list so we can notify you once a month about what’s going on. Once you do, we will list your first name below on a leaf blowing in the wind. There are 9,102 leaves right now.</p>
 
         <p>
-          <input type="text" name="first_name" placeholder="elliott" required="required" class="field" /> <input type="text" name="first_name" placeholder="email" required="required" class="field" /> <input type="submit" value="Submit"  class="field" />
+          <div id="mail-form">
+              <div class="field-item">
+                <label>First name:</label>
+                <input type="text" name="first_name" placeholder="" required="required" class="field" />
+              </div>
+              <div class="field-item">
+                <label>Email:</label>
+                <input type="text" name="email" placeholder="" required="required" class="field" />
+              </div>
+              <div class="field-item">
+                <label>Country:</label>
+                <input type="text" name="country" placeholder="" required="required" class="field" />
+              </div>
+              <div class="field-item">
+                <input type="submit" value="Submit"  class="field" />
+              </div>
+          </div>
         </p>
         
         <p>
