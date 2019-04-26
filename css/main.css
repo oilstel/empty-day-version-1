@@ -296,7 +296,7 @@ label {
     clear: both;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 750px) {
 
   .name-form input {
     width: 8em;
@@ -332,5 +332,23 @@ label {
 
     .footer {
       font-size: 0.75em;
+    }
+
+    .leaf {
+        width: 120px;
+        height: 120px;
+        padding-left: 20px;
+        padding-top: 100px;
+        margin-bottom: 20px;
+        background: url(../images/leaf.svg) no-repeat;
+        background-size: 100% 100%;
+        background-repeat: no-repeat !important;
+        float: left;
+        display: block;
+        line-height: 20px;
+    }
+
+    .leaf label {
+        margin-bottom: 3px;
     }
 }
