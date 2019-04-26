@@ -8,6 +8,10 @@ body {
     box-sizing: border-box;
 }
 
+.wrapper {
+    margin: 0 20px;
+}
+
 h1, h2, h3 {
     padding: 0;
     margin: 0;
@@ -91,14 +95,7 @@ nav select {
     margin-right: 0.15em;
 }
 
-.name-form {
-    position: relative;
-    display: inline;
-    /* right: 1em;
-    top: 14px; */
-}
-
-.field, .submit {
+.field, .field-inline, .submit {
     border: none;
     border: 1px solid rgb(156, 156, 156);
     border-radius: 10px;
@@ -112,10 +109,6 @@ nav select {
     border-radius: 10px;
     padding: 4px 8px 4px;
     outline: none;
-}
-
-.name-form input {
-    width: 200px;
 }
 
 .submit {
