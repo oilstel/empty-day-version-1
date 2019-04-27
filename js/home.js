@@ -33,4 +33,21 @@ $(document).ready(function(){
       $('body').fadeOut(2000);
     });
 
+    // Countdown to Empty Day
+
+    function displayTimeRemaining(emptyday_date){
+      var t = Date.parse(emptyday_date) - Date.parse(new Date());
+      var days = Math.floor( t/(1000*60*60*24) - 7);
+      var clock = document.getElementById('days')
+      clock.innerHTML = days;
+    }
+
+    var emptyday_date = '2019-10-19';
+
+    displayTimeRemaining(emptyday_date);
+
+    // Count number of leaves
+    // to come...
+
+
 });
