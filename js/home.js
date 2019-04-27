@@ -8,7 +8,6 @@ $(document).ready(function(){
       var field = $('input[name=firstname]').val();
 
       if (field == '') {
-        console.log('empty');
         $('.initname').text( '_' );
       }
     });
